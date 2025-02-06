@@ -4,10 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой Telegram-бот</title>
+
+    <!-- Подключаем шрифты из Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Общие стили */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            color: #2e3d48;
+            margin-top: 50px;
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Стиль для кнопки */
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #0088cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #006fa6;
+        }
+
+        /* Стили для изображения */
+        .hero-img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Стили для контейнера */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Футер */
+        footer {
+            font-size: 14px;
+            color: #777;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Привет! Это бот для Telegram</h1>
-    <p>Добавь бота в Telegram, нажав на кнопку ниже:</p>
-    <a href="https://t.me/your_bot" style="font-size: 20px;">➡ Добавить бота</a>
+    <div class="container">
+        <h1>Привет! Это бот для Telegram</h1>
+        <p>Добавь нашего бота в Telegram, чтобы получить доступ к уникальным функциям.</p>
+
+        <!-- Добавляем картинку с баннером или скриншотом -->
+        <img src="https://via.placeholder.com/800x400.png?text=Telegram+Bot" alt="Telegram Bot" class="hero-img">
+
+        <p>Нажмите на кнопку ниже, чтобы начать!</p>
+        <a href="https://t.me/magahhine2_bot" class="btn">➡ Добавить бота</a>
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        <p>&copy; 2025 Мой Telegram-бот. Все права защищены.</p>
+    </footer>
 </body>
 </html>
