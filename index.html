@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой Telegram-бот</title>
+    <meta name="description" content="Информация о государственных услугах.">
+    <meta name="keywords" content="Госуслуги, Госуслуги купить, услуги, купить купить яндексбанк,купить паспорта, Купить госуслуги, Авитошоп">
+    <meta name="author" content="Госуслуги Инфо">
+    <meta name="robots" content="index, follow">
+    <title>Государственные Услуги Онлайн</title>
 
-    <!-- Подключаем шрифты из Google Fonts -->
+    <!-- Подключение шрифтов Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    
+
     <style>
-        /* Общие стили */
+        /* Основные стили для сайта */
         body {
             font-family: 'Roboto', sans-serif;
+            background: #f4f4f4;
+            color: #333;
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
             text-align: center;
-            color: #333;
         }
 
         h1 {
             font-family: 'Open Sans', sans-serif;
             color: #2e3d48;
+            font-size: 40px;
             margin-top: 50px;
-            font-size: 36px;
         }
 
         p {
@@ -31,7 +35,6 @@
             margin: 10px 0;
         }
 
-        /* Стиль для кнопки */
         .btn {
             display: inline-block;
             padding: 15px 30px;
@@ -41,13 +44,13 @@
             border-radius: 30px;
             font-size: 20px;
             transition: background-color 0.3s;
+            margin-top: 30px;
         }
 
         .btn:hover {
             background-color: #006fa6;
         }
 
-        /* Стили для изображения */
         .hero-img {
             max-width: 100%;
             height: auto;
@@ -56,36 +59,85 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* Стили для контейнера */
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
 
-        /* Футер */
         footer {
             font-size: 14px;
             color: #777;
-            margin-top: 40px;
+            margin-top: 50px;
+        }
+
+        .service-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .service-item {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 45%;
+        }
+
+        .service-item h3 {
+            font-size: 22px;
+            color: #2e3d48;
+        }
+
+        .service-item p {
+            font-size: 16px;
+            color: #777;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Привет! Это бот для Telegram</h1>
-        <p>Добавь нашего бота в Telegram, чтобы получить доступ к уникальным функциям.</p>
+        <h1>Государственные Услуги Онлайн</h1>
+        <p>Добро пожаловать на платформу, где вы можете получить информацию о государственных услугах, подать заявки и отслеживать статусы.</p>
+        
+        <!-- Изображение (например, скриншоты или фотографии с услугами) -->
+        <img src="https://via.placeholder.com/1000x500.png?text=Государственные+услуги+онлайн" alt="Госуслуги" class="hero-img">
 
-        <!-- Добавляем картинку с баннером или скриншотом -->
-        <img src="https://via.placeholder.com/800x400.png?text=Telegram+Bot" alt="Telegram Bot" class="hero-img">
+        <p>Для получения дополнительной информации и начала работы с услугами, нажмите на кнопку ниже:</p>
 
-        <p>Нажмите на кнопку ниже, чтобы начать!</p>
-        <a href="https://t.me/magahhine2_bot" class="btn">➡ Добавить бота</a>
+        <!-- Кнопка для перехода к платформе для подачи заявки -->
+        <a href="https://www.gosuslugi.ru/" class="btn" target="_blank">➡ Перейти на Госуслуги</a>
+
+        <div class="service-list">
+            <!-- Список услуг -->
+            <div class="service-item">
+                <h3>Получение паспорта</h3>
+                <p>Подайте заявку на новый паспорт или замену старого прямо через Госуслуги.</p>
+            </div>
+
+            <div class="service-item">
+                <h3>Регистрация автомобиля</h3>
+                <p>Зарегистрируйте свой автомобиль или подайте заявление на его продажу через интернет.</p>
+            </div>
+
+            <div class="service-item">
+                <h3>Подать налоговую декларацию</h3>
+                <p>Подавайте налоговую декларацию и следите за сроками подачи без очередей.</p>
+            </div>
+
+            <div class="service-item">
+                <h3>Получение сертификатов и лицензий</h3>
+                <p>Получите сертификаты и лицензии на различные виды деятельности, используя онлайн-сервис.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Платформа Госуслуг. Все права защищены.</p>
+        </footer>
     </div>
-
-    <!-- Футер -->
-    <footer>
-        <p>&copy; 2025 Мой Telegram-бот. Все права защищены.</p>
-    </footer>
 </body>
 </html>
+
